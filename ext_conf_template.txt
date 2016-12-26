@@ -1,0 +1,72 @@
+	
+	# cat=Basic; type=boolean; label=Use TTF: Render letters using "imagettftext". Warning: Support for non TTF rendering has been dropped so always make this checkbox active!!!
+useTTF = 1 
+
+	# cat=Basic; type=boolean; label=Use PHP sessions: When checked PHP sessions are used and the captcha is stored/retrieved from $_SESSION. Otherwise TYPO3 FE sessions are used.
+usePHPsession = 0
+
+	# cat=Basic; type=integer; label=Image width: The width of the captcha image
+imgWidth = 135
+
+	# cat=Basic; type=integer; label=Image height: The height of the captcha image
+imgHeight = 35
+
+	# cat=Basic; type=integer; label=Captcha chars: The number of characters of which the captcha consists
+captchaChars = 5
+
+
+	# cat=Characters; type=boolean; label=No numbers: No digits (0-9) will get used for the capcha string
+noNumbers = 0
+	
+	# cat=Characters; type=boolean; label=No lowercase characters: No lowercase characters (a-z) will get used for the capcha string
+noLower = 0
+	
+	# cat=Characters; type=boolean; label=No uppercase characters: No uppercase characters (a-z) will get used for the capcha string
+noUpper = 0
+
+	# cat=Characters; type=string; label=Exclude chars: All characters listed here will not get used for the captcha
+excludeChars = gijloGIJLO0169cCsSvVwWxX
+
+
+	# cat=Rendering; type=integer; label=Letter spacing: The number of pixels between the each character.
+letterSpacing = 10
+
+	# cat=Rendering; type=integer; label=Angle: The angle in degree which each letter is rotated maximally clock-, or counterclock-wise
+angle = 35
+	
+	# cat=Rendering; type=integer; label=X Difference: The number of pixels which each letter is maximally shifted to the left or right
+diffx = 0
+	
+	# cat=Rendering; type=integer; label=Y Difference: The number of pixels which each letter is maximally shifted up or down
+diffy = 2
+
+	# cat=Rendering; type=integer; label=X Offset: The numer of pixels which the first character is away from the top left corner in horizontal direction
+xpos = 3
+	
+	# cat=Rendering; type=integer; label=Y Offset: The numer of pixels which the first character is away from the top left corner in vertical direction
+ypos = 4
+
+	
+	# cat=Background; type=integer; label=Noises: How many 'obfuscating' ellipses are drawn onto the background of the image
+noises = 6
+	
+	# cat=Background; type=string; label=Background color: The background color for the captcha
+backcolor = #f4f4f4
+
+	# cat=Background; type=string; label=Obfuscation color: The color of the obfuscating ellipses
+obfusccolor = #828482
+
+
+	
+	# cat=Font; type=string; label=Text color: The text color for the captcha
+textcolor = #000000
+
+	# cat=Font; type=integer; label=Font size: The font size in pixels (Just for TTF mode)
+fontSize = 16
+
+	# cat=Font; type=string; label=Font file: The font file to use in TTF mode (relative to the root of the TYPO3 installation)
+fontFile = 
+
+	# cat=Font; type=boolean; label=Bold text: When set the text of the captcha will be somewhat bold
+bold = 0
+
