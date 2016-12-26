@@ -78,7 +78,9 @@ class Utility {
 		$captchaSolved = false;
 
 		// Get stored captcha string from session handler
-		$sessionHandler = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance($this->conf['sessionHandler']);
+		$sessionHandler = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
+			$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['captcha']['sessionHandler']
+		);
 		$storedCaptchaValue = (string)$sessionHandler->retrieveCaptcha($formId);
 		// If no captcha value has been stored this counts as NOT solved!
 		if (empty($storedCaptchaValue)) {
