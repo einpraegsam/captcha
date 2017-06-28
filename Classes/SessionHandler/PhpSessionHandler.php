@@ -47,7 +47,7 @@ class PhpSessionHandler extends AbstractSessionHandler implements SessionHandler
 
 		// TODO: Remove in version 3.0
 		// The following line is here for backward compatibility reasons.
-		$_SESSION['tx_captcha_string'] = $data;
+		$_SESSION['tx_captcha_string'] = $text;
 	}
 
 	/**
